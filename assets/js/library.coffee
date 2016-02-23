@@ -67,6 +67,34 @@ module.exports =
             .replace /(\B|^)\u2018(?=([^\u2019]*\u2019\b)*([^\u2019\u2018]*\W[\u2019\u2018]\b|[^\u2019\u2018]*$))/ig, '$1\u2019'
             .replace /'/g, '\u2032'
 
+    replaceBrackets: (string) ->
+        string = string
+            .replace _Regex.BRACKETS, (match, $1) ->
+                if $1 is ')'
+                    return '）'
+                else return '（'
+
+        string
+            .replace _Regex.B_EP, (match, $1, $2) ->
+                return $1 + punctuationReplacement $2
+            .replace _Regex.EP_B, (match, $1, $2) ->
+                return punctuationReplacement $1 + $2
+
+    removeRepeatingPunctuation: (string) ->
+        string = string
+            .replace _Regex.CHINESE_PUNCTUATION, (match, $1) ->
+                if $1.length is 1
+                    return $1
+                else
+                    return $1[0]
+
+    normalizeEllipsis: (string) ->
+        string = string
+            .replace _Regex.E_EL, '$1... '
+        string
+            .replace _Regex.C_EL, '$1……'
+
+
     normalizeSpace: (string) ->
         string = string
             .replace /\s+/g, ' '

@@ -23,13 +23,9 @@ You will get the result in the console like:
 
 If you are about to make some contribution to it, you can do `npm install` and everything will work for you then.
 
-
-
 ### Bugs to be solved
 - URLs and Emails are not well treated.
 - Inline code and code blocks still needs to be dealt with.
-- Continuously repeating punctuation are going to be removed.
-- The spacing between numerical value and unit symbol should be updated.
 
 ### Reference
 [SmartQuotesJS](https://github.com/kellym/smartquotesjs)

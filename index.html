@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>Pampoo Demo</title>
+</head>
+<body>
+    You can open the console in your browser to see what happend already.
+</body>
+<script type="text/javascript" src="./build/js/pampoo.min.js" charset="utf-8"></script>
+<script>
+function demo(test) {
+    console.log('Example:');
+    console.log('Before:\t' + test);
+    console.log('After:\t' + Pampoo.cleanUp(test));
+    console.log('======================================================');
+}
+var test1 = '在jisuanke.com上,界面样式是按照Jisuan-UI为标准的.';
+demo(test1);
+
+var test2 = '计蒜客的《网页制作与设计》课需要3个学分空间。';
+demo(test2);
+
+var test3 = '我家的宽带有 1Gbps，硬盘一共有 10TB。';
+demo(test3);
+
+var test4 = '你的一些文字some of your "best" text.可以随便写100字或者200行噢!';
+demo(test4);
+
+</script>
+</html>

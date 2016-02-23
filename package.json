@@ -1,0 +1,26 @@
+{
+  "name": "Pampoo",
+  "version": "0.0.1",
+  "description": "A tool that replace English punctuations to Chinese ones.",
+  "main": "index.js",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "coffeeify": "^2.0.1",
+    "del": "^2.2.0",
+    "gulp": "^3.8.10",
+    "gulp-uglify": "^1.0.2",
+    "gulp-util": "^3.0.7",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haoranyu/Pampoo.git"
+  },
+  "author": "",
+  "license": "mit",
+  "bugs": {
+    "url": "https://github.com/haoranyu/Pampoo/issues"
+  },
+  "homepage": "https://github.com/haoranyu/Pampoo"
+}

@@ -1,5 +1,5 @@
 # Pampoo
- A tool that replace English punctuations to Chinese ones and add spaces to format texts.
+ A tool that replace English punctuations with Chinese ones and add spaces to format texts.
 
 ### How to use it
 You can simply use the built file at `build/js/pampoo.min.js` and put it on your page:

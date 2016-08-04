@@ -27,9 +27,6 @@ If you are about to make some contribution to it, you can do `npm install` and e
 - URLs and Emails are not well treated.
 - Inline code and code blocks still needs to be dealt with.
 
-### Other Version
-[LiveScript version](https://github.com/alexlur/Pampoo/) by Alex Cai
-
 ### Reference
 
 [SmartQuotesJS](https://github.com/kellym/smartquotesjs)
